@@ -1,0 +1,48 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+img{
+    width: 290px;
+    height: 245px;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+    color: #515076
+
+}
+
+.menu{
+    list-style-type: none;
+}
+
+.product_name, .price{
+    font-size: 20px;
+    color: #515076;
+    font-weight: 700;
+}
+
+.product-category{
+    font-size: 12px;
+    line-height: 24px;
+    color: #A5A3B9;
+    text-transform: uppercase;
+}
+
+.price-num{
+    font-size: 20px;
+    color: #515076;
+}
+
+.structure{
+    padding-left: 20px;
+}
+
+.description{
+    padding-top: 0;
+}
+
