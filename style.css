@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -16,9 +20,6 @@ img{
 
 }
 
-.menu{
-    list-style-type: none;
-}
 
 .product_name, .price{
     font-size: 20px;
@@ -27,6 +28,7 @@ img{
 }
 
 .product-category{
+
     font-size: 12px;
     line-height: 24px;
     color: #A5A3B9;
@@ -40,9 +42,31 @@ img{
 
 .structure{
     padding-left: 20px;
+
 }
 
 .description{
     padding-top: 0;
+
 }
 
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+}
+
+.container{
+    background-color: #F5F5F5;
+    width: 340px;
+    padding: 25px;
+    
+}
+
+.price-block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 20px;
+}
