@@ -5,6 +5,35 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
+    background-image: url(resource/image/back-ground.png);
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.product-block{
+    width: 1110px;
+    margin: 0 auto;
+    color: #515076;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    list-style: none; 
+}
+
+.card-product {
+    background-color: #F5F5F5;
+    width: 340px;
+    padding: 25px;
 }
 
 .product-image {
@@ -12,54 +41,25 @@ body {
     height: 245px;
 }
 
-.title {
-    font-size: 70px;
-    font-weight: 400;
-    text-align: center;
-    color: #515076
-}
-
-.menu {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 0;
-    list-style: none;
-}
-
-.container {
-    background-color: #F5F5F5;
-    width: 340px;
-    height: 573px;
-    padding: 25px;
-
-}
-
 .product-category {
-
     font-size: 12px;
     line-height: 24px;
     color: #A5A3B9;
     text-transform: uppercase;
 }
 
-
-.product-name,
-.price {
+.product-name {
     font-size: 20px;
-    color: #515076;
     font-weight: 700;
-}
-
-.description {
-    padding-top: 0;
-    color: #515076;
 }
 
 .structure {
     padding-left: 20px;
-    color: #515076;
     list-style: circle;
+}
+
+.structure li {
+    margin: 8px;
 }
 
 .price-block {
@@ -67,14 +67,4 @@ body {
     justify-content: space-between;
     margin-top: 30px;
     font-size: 20px;
-    color: #515076;
-}
-
-.price-num {
-    font-size: 20px;
-    color: #515076;
-}
-
-.structure-title {
-    color: #515076;
 }
