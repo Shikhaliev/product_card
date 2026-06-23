@@ -1,0 +1,20 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+}
+
+.products__item {
+    color: #515076;
+    width: 340px;
+}
+
+
+
+.price-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 20px;
+}

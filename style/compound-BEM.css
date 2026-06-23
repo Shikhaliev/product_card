@@ -1,0 +1,9 @@
+.compound__structure {
+    list-style: circle;
+    padding-inline-start: 0px;
+}
+
+.compound__structure li {
+    margin-top: 5px;
+    margin-left: 15px;
+}

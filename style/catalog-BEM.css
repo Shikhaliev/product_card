@@ -1,0 +1,15 @@
+.catalog__container {
+    background-image: url(../resource/image/back-ground.png);
+    background-repeat:  no-repeat;
+    background-position: 0;
+    padding-top: 1px;
+    width: 790px;
+    height: 697px;
+}
+
+
+.catalog__title {
+    margin-top: 220px;
+    margin-bottom:  100px;
+}
+

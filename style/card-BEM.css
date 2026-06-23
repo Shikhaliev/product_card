@@ -1,11 +1,16 @@
 .card {
-background-color: #F5F5F5;
+    background-color: #F5F5F5;
     padding: 25px;
 }
 
 .card__image {
     width: 290px;
     height: 245px;
+    margin-bottom: 30px;
+}
+
+.card__description p{
+    margin-top:  15px;  
 }
 
 .card__category {
@@ -13,9 +18,15 @@ background-color: #F5F5F5;
     line-height: 24px;
     color: #A5A3B9;
     text-transform: uppercase;
+    margin: 0px 0px 5px 0px;
 }
 
 .card__name {
     font-size: 20px;
     font-weight: 700;
+    margin: 0px 0px 5px 0px;
+}
+
+.card__compound {
+    margin-top: 5px;
 }
