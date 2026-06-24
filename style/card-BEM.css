@@ -30,3 +30,10 @@
 .card__compound {
     margin-top: 5px;
 }
+
+.card__price-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 20px;
+}
