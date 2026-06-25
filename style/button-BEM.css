@@ -1,0 +1,27 @@
+.button__buy {
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border: 1.5px solid #5150761A;
+    border-radius: 6px;
+    background-color: #ffffff;
+    height: 31.62px;
+    padding: 6px 12px ;
+    gap: 8px;
+}
+
+.button__icon {
+    background-image: url("../resource/image/button-icon-1.png");
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+}
+
+.button__text {
+    width: 54px;
+    font-size: 14px;
+    font-weight:500;
+    font-family:  'Montserrat';
+    color: #515076;
+    letter-spacing: 2%;
+}
