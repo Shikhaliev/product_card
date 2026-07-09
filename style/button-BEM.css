@@ -2,7 +2,7 @@
     display: inline-flex;
     flex-flow: row;
     justify-content: space-between;
-    border: 1.5px solid #5150761A;
+    border: 1.5px solid #5150761a;
     border-radius: 6px;
     background-color: #ffffff;
     height: 31.62px;
@@ -25,3 +25,4 @@
     color: #515076;
     letter-spacing: 2%;
 }
+
