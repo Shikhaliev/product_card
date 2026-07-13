@@ -20,35 +20,35 @@ productColorChangeButton .addEventListener('click', () => {
 
 // Перекраства всех карт 
 productsColorChangeButton.addEventListener('click', () => {
-    productsCard.forEach((card) => card.style.backgroundColor = secondColorHash)
-    });
+    productsCard.forEach((card) => card.style.backgroundColor = secondColorHash);
+});
 
 // Переход на google
 openGoogleButton.addEventListener('click', openGoogle)
 
-function openGoogle(){
+function openGoogle() {
     const answer = confirm("Вы действительно хотите перейти по сылке ?");
 
-    if(answer === true){
+    if (answer === true) {
         window.open('https://www.google.com')
     }
-    else{
+    else {
         return;
     }
 }
 
 //Вывод в консоль при наведении
-outLog.addEventListener('mouseover', () =>
-    {outLogConsole(textElem);
+outLog.addEventListener('mouseover', () => {
+    outLogConsole(textElem);
 });
 
-function outLogConsole(message){
+function outLogConsole(message) {
     console.log(message);
 }
 
-outLog2.addEventListener('click', ()=>[
-    outputConsoleMessage('ДЗ-6')
-])
+outLog2.addEventListener('click', ()=>{
+    outputConsoleMessage('ДЗ-6');
+})
 
 function outputConsoleMessage(message){
     alert(message);
