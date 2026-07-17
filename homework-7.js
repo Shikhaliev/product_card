@@ -3,6 +3,12 @@ const LIGHT_SPEED = 299792458;
 let product = "iphone 17pro Max Ultra ";
 let price = 1299;
 
+let userList;
+let totalUserCount;
+const AVERAGE_SPEED;
+
+
+
 function speedCheck(speed) {
     if (speed > LIGHT_SPEED) {
         console.log("Сверхсветовая скорость");
@@ -26,6 +32,8 @@ function calculatCash(budget){
 function weatherOut(degree, city) {
     console.log(`Сейчас в ${city} температура — ${degree} градусов по Цельсию`);
 }
+
+function averageUserSpeed(){};
 
 speedCheck(300000);
 speedCheck(300000000);
