@@ -13,17 +13,14 @@ const secondColorHash = '#130ddb2a';
 
 const textElem = outLog.textContent;
 
-// Перекраска одной карты 
 productColorChangeButton .addEventListener('click', () => {
     productCard.style.backgroundColor = firstColorHash;
 })
 
-// Перекраства всех карт 
 productsColorChangeButton.addEventListener('click', () => {
     productsCard.forEach((card) => card.style.backgroundColor = secondColorHash);
 });
 
-// Переход на google
 openGoogleButton.addEventListener('click', openGoogle)
 
 function openGoogle() {
@@ -37,7 +34,6 @@ function openGoogle() {
     }
 }
 
-//Вывод в консоль при наведении
 outLog.addEventListener('mouseover', () => {
     outLogConsole(textElem);
 });
