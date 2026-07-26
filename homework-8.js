@@ -52,7 +52,7 @@ logProperty(car, 'brand');
 
 classicBooks.push({name: 'Алиса в Стране чудес ', author: 'Льюис Кэрролл', age: 1865, color: 'Красный', style: 'Сказка'})
 
-const allBooks = bookList.concat(marvelBooks);
+const allBooks = classicBooks.concat(marvelBooks);
 
 function addRarityFlag(books) {
     return books.map(book => ({
