@@ -56,8 +56,9 @@ const allBooks = classicBooks.concat(marvelBooks);
 
 function addRarityFlag(books) {
     return books.map(book => ({
-            ...book, isRare: book.year >= 2000
-    }))
+        ...book, 
+        isRare: book.year >= 2000
+    }));
 }
 
 console.log(addRarityFlag(allBooks));
