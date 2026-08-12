@@ -36,7 +36,7 @@ function logReversedArray ( arr ) {
 // Уровень №2:
 
 // Задание №7: Отсартировка массива с коментириями на новый, где присутствует только те пользователи у которых почта заканчивается на .com
-const comWithComEmail = socNetworkCommentsArray.filter(com => com.email.endsWith(".com"));
+const commentWithComEmail = socNetworkCommentsArray.filter(com => com.email.includes(".com"));
 
 // Задание №8: Перебор массива по Id, с добавлением нового свойства 
 const commentsWithPostId = socNetworkCommentsArray.map(com => ({
@@ -60,15 +60,10 @@ const arrayLenghtCheck = socNetworkCommentsArray.map(com =>({
 
 // Задание 11: Вывод почтовых адресов с помошью метода reduce и map
 const emailsStringFromReduce = socNetworkCommentsArray.reduce((acc, value) => {
-    return acc + value.email + " ", "";
-});
+    return acc .push(value.email);
+}, []);
 
-const  emailsStringFromMap = socNetworkCommentsArray.map(em => em.email);
+const  emailsFromMap = socNetworkCommentsArray.map(em => em.email);
 
 // Задание 12: Перебор массива, где приводим его в строковому типу 
-const emailsString = emailsStringFromMap.join(" ");
-
-
-
-
-
+const emailsString = emailsFromMap.join(" ");
