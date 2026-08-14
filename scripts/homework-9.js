@@ -60,7 +60,8 @@ const arrayLenghtCheck = socNetworkCommentsArray.map(com =>({
 
 // Задание 11: Вывод почтовых адресов с помошью метода reduce и map
 const emailsStringFromReduce = socNetworkCommentsArray.reduce((acc, value) => {
-    return acc .push(value.email);
+    acc.push(value.email);
+    return acc;
 }, []);
 
 const  emailsFromMap = socNetworkCommentsArray.map(em => em.email);
