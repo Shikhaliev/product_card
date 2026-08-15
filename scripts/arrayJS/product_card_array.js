@@ -1,4 +1,4 @@
-export const productsCard = [
+export const products = [
     {
         name: "Увлажняющий мусс",
         category: "для нормальной кожи",
