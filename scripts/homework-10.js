@@ -5,9 +5,9 @@ const productsList = document.querySelector('.products');
 
 const numCards = prompt("Сколько карточек отобразить? От 1 до 5");
 
-const someArray = products.slice(0, checkNumCards(numCards));
+const productsForDisplay = products.slice(0, checkNumCards(numCards));
 
-someArray.forEach((product) => {
+productsForDisplay.forEach((product) => {
     const productsClone = productsTemplate.content.cloneNode(true);
     productsClone.querySelector('.card__category').textContent = product.category
     productsClone.querySelector('.card__name').textContent = product.name
@@ -25,7 +25,7 @@ someArray.forEach((product) => {
     productsList.appendChild(productsClone);
 });
 
-const newArray = products.reduce((acc, value) =>{
+const newArray = products.reduce((acc, value) => {
     return {
         ...acc,
         [value.name]: value.description,
