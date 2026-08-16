@@ -8,7 +8,8 @@ export const products = [
             "активные натуральные комплексы",
             "витамины С, А, РР, В И Е",
             "солнцезащитные компоненты"
-        ]
+        ],
+        image: "resource/image/photo_1.png",
     },
 
     {
@@ -20,7 +21,8 @@ export const products = [
             "воски",
             "минералы",
             "масла"
-        ]
+        ],
+        image: "resource/image/photo_2.png"
     },
 
     {
@@ -32,7 +34,8 @@ export const products = [
             "минералы",
             "витамины С, А, РР, В И Е",
             "солнцезащитные компонент"
-        ]
+        ],
+        image: "resource/image/photo_3.png"
     },
 
     {
@@ -44,7 +47,8 @@ export const products = [
             "воски",
             "минералы",
             "масла"
-        ]
+        ],
+        image: "resource/image/photo_4.png"
     },
 
     {
@@ -56,6 +60,7 @@ export const products = [
             "воски",
             "минералы",
             "масла"
-        ]
+        ],
+        image: "resource/image/photo_5.png"
     },
 ]

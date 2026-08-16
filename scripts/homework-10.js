@@ -13,6 +13,8 @@ productsForDisplay.forEach((product) => {
     productsClone.querySelector('.card__name').textContent = product.name
     productsClone.querySelector('.card__description').textContent = product.description
     productsClone.querySelector('.card__price-block span').textContent = product.price + ' ₽'
+    const imageElement = productsClone.querySelector('.card__image');
+    imageElement.src = product.image;
 
     const structureItems = productsClone.querySelectorAll('.compound__structure li');
 
