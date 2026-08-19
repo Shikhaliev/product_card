@@ -3,11 +3,29 @@ import { products } from "./arrayJS/product_card_array.js";
 const productsTemplate = document.querySelector('.products-template');
 const productsList = document.querySelector('.products');
 
-const numCards = prompt("Сколько карточек отобразить? От 1 до 5");
+const productsForDisplay = products.slice(0, checkNumCards());
 
-const productsForDisplay = products.slice(0, checkNumCards(numCards));
+displayCards();
 
-productsForDisplay.forEach((product) => {
+const newArray = products.reduce((acc, value) => {
+    return [
+        ...acc,
+        value.name, value.description,
+    ]
+}, []);
+
+function checkNumCards(){
+    let сardsNum = +prompt("Сколько карточек отобразить? От 1 до 5");
+    if(isNaN(сardsNum) || 0 > сardsNum || сardsNum > 5){
+        console.log("Вы ввели неправильное число !")
+        return сardsNum = 0;
+    } else {
+        return сardsNum;
+    }
+};
+
+function displayCards(){
+    productsForDisplay.forEach((product) => {
     const productsClone = productsTemplate.content.cloneNode(true);
     productsClone.querySelector('.card__category').textContent = product.category
     productsClone.querySelector('.card__name').textContent = product.name
@@ -16,29 +34,15 @@ productsForDisplay.forEach((product) => {
     const imageElement = productsClone.querySelector('.card__image');
     imageElement.src = product.image;
 
-    const structureItems = productsClone.querySelectorAll('.compound__structure li');
+    const compoundList = productsClone.querySelector('.compound__structure');
+    compoundList.innerHTML = '';
 
-    structureItems.forEach((li, index) => {
-        if (index < product.structure.length) {
-            li.textContent = product.structure[index];
-        };
-    });
+    product.structure.forEach((item) => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        compoundList.appendChild(li);
+    })
     
     productsList.appendChild(productsClone);
-});
-
-const newArray = products.reduce((acc, value) => {
-    return {
-        ...acc,
-        [value.name]: value.description,
-    }
-}, {});
-
-function checkNumCards(num){
-    if(0 > num || num > 5){
-        console.log("Вы ввели неправильное число !")
-        return num = 0;
-    } else {
-        return num;
-    }
-};
+})
+}

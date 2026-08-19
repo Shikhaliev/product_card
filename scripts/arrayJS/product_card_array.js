@@ -7,11 +7,10 @@ export const products = [
         structure: [
             "активные натуральные комплексы",
             "витамины С, А, РР, В И Е",
-            "солнцезащитные компоненты"
+            "солнцезащитные компоненты",
         ],
         image: "resource/image/photo_1.png",
     },
-
     {
         name: "Увлажняющая маска",
         category: "для нормальной кожи",
@@ -24,7 +23,6 @@ export const products = [
         ],
         image: "resource/image/photo_2.png"
     },
-
     {
         name: "Гель для умывания",
         category: "для нормальной кожи",
@@ -37,7 +35,6 @@ export const products = [
         ],
         image: "resource/image/photo_3.png"
     },
-
     {
         name: "Подарочный набор №1",
         category: "для нормальной кожи",
@@ -50,7 +47,6 @@ export const products = [
         ],
         image: "resource/image/photo_4.png"
     },
-
     {
         name: "Подарочный набор №5",
         category: "для нормальной кожи",
