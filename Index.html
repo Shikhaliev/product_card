@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/products-BEM.css">
     <link rel="stylesheet" href="style/button-BEM.css">
     <link rel="stylesheet" href="style/button-style.css">
+    <link rel="stylesheet" href="style/footer-BEM.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -28,22 +29,15 @@
             <h1 class="title catalog__title">Выбери свой продукт</h1>
     
                 <ul class="products  clear-list">  
-                    <template class = "products-template">
+                    <template class="products-template">
                         <li class="products__item card">
-                            <img class ="card__image" src>
+                            <img class="card__image" src>
                             <p class="card__category"></p>
                             <h2 class="card__name"></h2>
-                            <div class="card__description">
-                                <p ></p>
-                            </div>
-
+                            <div class="card__description"></div>
                             <div class="card__compound compound"> 
                                 <span>Состав:</span>
-                                <ul class="compound__structure">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+                                <ul class="compound__structure"></ul>
                             </div>
 
                             <div class="card__price-block">
@@ -52,7 +46,41 @@
                         </li>
                     </template>
                 </ul>
+        <footer class="footer__block">
+            <div class="footer__top">
+                <div class="footer__top-brending">
+                    <h3>Product Cards</h3>
+                    <p>У нас самые лучшие продукты для кожи!</p>
+                    <div class="brending-link">
+                        <img src="/resource/image/TG.svg" alt="">
+                        <img src="/resource/image/VK.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="footer__top-mailing">
+                    <p>Подпишись на наши акции:</p>
+                    <form>
+                        <input type="email" placeholder="Введите Email..." autocomplete>  
+                    </form>
+                </div>
+                <div class="footer__top-navigation">
+                    <nav>
+                        <p>Быстрые сылки</p>
+                        <a href="#" >Главная</a>
+                        <a href="#" >Магазин</a>
+                        <a href="#" >Контакты</a>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <hr>
+                <a class="footer__product-link">www.product-cards.com©all right reserve</a>
+            </div>
+        </footer>
         </div>
+
+        
     </main>
 
     <!--<script src="main.js"></script>
@@ -60,6 +88,7 @@
     <script src="scripts/homework-8.js"></script>
     <script src="scripts/homework-9.js" type="module"></script> -->
     <script src="scripts/homework-10.js" type="module"></script>
+    <script src="scripts/homework-11.js" type="module"></script>
 
 </body>
 </html>

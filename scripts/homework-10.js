@@ -38,7 +38,7 @@ function displayCards(cards){
 }
 
 function checkNumCards(){
-    let сardsNum = +prompt("Сколько карточек отобразить? От 1 до 5");
+    let сardsNum = 5//+prompt("Сколько карточек отобразить? От 1 до 5");
     if (isNaN(сardsNum) || 0 > сardsNum || сardsNum > 5){
         console.log("Вы ввели неправильное число !")
         return сardsNum = 0;
